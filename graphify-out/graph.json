@@ -1,0 +1,230 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "main.go",
+      "file_type": "code",
+      "source_file": "main.go",
+      "source_location": "L1",
+      "id": "main_go",
+      "community": 1,
+      "norm_label": "main.go"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "main.go",
+      "source_location": "L18",
+      "id": "backend_main_init",
+      "community": 0,
+      "norm_label": "init()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "main.go",
+      "source_location": "L38",
+      "id": "backend_main_main",
+      "community": 1,
+      "norm_label": "main()"
+    },
+    {
+      "label": "middlewares.go",
+      "file_type": "code",
+      "source_file": "middlewares/middlewares.go",
+      "source_location": "L1",
+      "id": "middlewares_middlewares_go",
+      "community": 1,
+      "norm_label": "middlewares.go"
+    },
+    {
+      "label": "Stack()",
+      "file_type": "code",
+      "source_file": "middlewares/middlewares.go",
+      "source_location": "L18",
+      "id": "middlewares_middlewares_stack",
+      "community": 1,
+      "norm_label": "stack()"
+    },
+    {
+      "label": "health.go",
+      "file_type": "code",
+      "source_file": "controllers/health.go",
+      "source_location": "L1",
+      "id": "controllers_health_go",
+      "community": 2,
+      "norm_label": "health.go"
+    },
+    {
+      "label": "Health()",
+      "file_type": "code",
+      "source_file": "controllers/health.go",
+      "source_location": "L5",
+      "id": "controllers_health_health",
+      "community": 2,
+      "norm_label": "health()"
+    },
+    {
+      "label": "response.go",
+      "file_type": "code",
+      "source_file": "helpers/response.go",
+      "source_location": "L1",
+      "id": "helpers_response_go",
+      "community": 3,
+      "norm_label": "response.go"
+    },
+    {
+      "label": "JSONError()",
+      "file_type": "code",
+      "source_file": "helpers/response.go",
+      "source_location": "L5",
+      "id": "helpers_response_jsonerror",
+      "community": 3,
+      "norm_label": "jsonerror()"
+    },
+    {
+      "label": "env.go",
+      "file_type": "code",
+      "source_file": "initializers/env.go",
+      "source_location": "L1",
+      "id": "initializers_env_go",
+      "community": 0,
+      "norm_label": "env.go"
+    },
+    {
+      "label": "LoadEnv()",
+      "file_type": "code",
+      "source_file": "initializers/env.go",
+      "source_location": "L16",
+      "id": "initializers_env_loadenv",
+      "community": 0,
+      "norm_label": "loadenv()"
+    },
+    {
+      "label": "db.go",
+      "file_type": "code",
+      "source_file": "initializers/db.go",
+      "source_location": "L1",
+      "id": "initializers_db_go",
+      "community": 0,
+      "norm_label": "db.go"
+    },
+    {
+      "label": "ConnectDB()",
+      "file_type": "code",
+      "source_file": "initializers/db.go",
+      "source_location": "L15",
+      "id": "initializers_db_connectdb",
+      "community": 0,
+      "norm_label": "connectdb()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "main_go",
+      "target": "backend_main_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.go",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "main_go",
+      "target": "backend_main_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.go",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "backend_main_init",
+      "target": "initializers_env_loadenv"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.go",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "backend_main_init",
+      "target": "initializers_db_connectdb"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.go",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "backend_main_main",
+      "target": "middlewares_middlewares_stack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/middlewares.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "middlewares_middlewares_go",
+      "target": "middlewares_middlewares_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/health.go",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "controllers_health_go",
+      "target": "controllers_health_health",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "helpers/response.go",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "helpers_response_go",
+      "target": "helpers_response_jsonerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "initializers/env.go",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "initializers_env_go",
+      "target": "initializers_env_loadenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "initializers/db.go",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "initializers_db_go",
+      "target": "initializers_db_connectdb",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}

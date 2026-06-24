@@ -1,0 +1,30 @@
+{
+  "/Users/admin/go/src/twitter/backend/main.go": {
+    "mtime": 1782270395.2547486,
+    "hash": "4f67aca4dacff32cedf82469b18708f0"
+  },
+  "/Users/admin/go/src/twitter/backend/middlewares/middlewares.go": {
+    "mtime": 1782270391.2440093,
+    "hash": "1c9aa28c3655dbf629c444066c162a54"
+  },
+  "/Users/admin/go/src/twitter/backend/controllers/health.go": {
+    "mtime": 1782270391.6684442,
+    "hash": "1669288a705520ab3f8e8811f4170724"
+  },
+  "/Users/admin/go/src/twitter/backend/helpers/response.go": {
+    "mtime": 1782270392.4335258,
+    "hash": "0b83d39598af73b513234fc81c026635"
+  },
+  "/Users/admin/go/src/twitter/backend/initializers/env.go": {
+    "mtime": 1782270726.8359375,
+    "hash": "74a35fa4577b78aba97725a22bb6eaec"
+  },
+  "/Users/admin/go/src/twitter/backend/initializers/db.go": {
+    "mtime": 1782270388.805296,
+    "hash": "479a17542cb1363b4b4c9f41c8a68094"
+  },
+  "/Users/admin/go/src/twitter/PROMPTS.md": {
+    "mtime": 1782270400.7435656,
+    "hash": "0b3f25c989a8101635b8cba16a0989ff"
+  }
+}
