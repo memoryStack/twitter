@@ -51,6 +51,7 @@ func CreateTweet(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": "failed to create tweet"})
 	}
 
+	tweet.Author = models.TweetAuthorFromUser(*user)
 	return c.Status(fiber.StatusCreated).JSON(fiber.Map{"tweet": tweet})
 }
 
