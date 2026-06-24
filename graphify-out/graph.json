@@ -9,26 +9,431 @@
       "source_file": "main.go",
       "source_location": "L1",
       "id": "main_go",
-      "community": 1,
+      "community": 2,
       "norm_label": "main.go"
     },
     {
       "label": "init()",
       "file_type": "code",
       "source_file": "main.go",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "backend_main_init",
-      "community": 0,
+      "community": 2,
       "norm_label": "init()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "main.go",
-      "source_location": "L38",
+      "source_location": "L45",
       "id": "backend_main_main",
-      "community": 1,
+      "community": 2,
       "norm_label": "main()"
+    },
+    {
+      "label": "config.go",
+      "file_type": "code",
+      "source_file": "auth/config.go",
+      "source_location": "L1",
+      "id": "auth_config_go",
+      "community": 3,
+      "norm_label": "config.go"
+    },
+    {
+      "label": "Config",
+      "file_type": "code",
+      "source_file": "auth/config.go",
+      "source_location": "L11",
+      "id": "auth_config",
+      "community": 3,
+      "norm_label": "config"
+    },
+    {
+      "label": "loadAuth0Config()",
+      "file_type": "code",
+      "source_file": "auth/config.go",
+      "source_location": "L30",
+      "id": "auth_config_loadauth0config",
+      "community": 3,
+      "norm_label": "loadauth0config()"
+    },
+    {
+      "label": "cookies.go",
+      "file_type": "code",
+      "source_file": "auth/cookies.go",
+      "source_location": "L1",
+      "id": "auth_cookies_go",
+      "community": 1,
+      "norm_label": "cookies.go"
+    },
+    {
+      "label": "cookieSameSiteFiber()",
+      "file_type": "code",
+      "source_file": "auth/cookies.go",
+      "source_location": "L9",
+      "id": "auth_cookies_cookiesamesitefiber",
+      "community": 1,
+      "norm_label": "cookiesamesitefiber()"
+    },
+    {
+      "label": "SetAuthCookies()",
+      "file_type": "code",
+      "source_file": "auth/cookies.go",
+      "source_location": "L21",
+      "id": "auth_cookies_setauthcookies",
+      "community": 1,
+      "norm_label": "setauthcookies()"
+    },
+    {
+      "label": "strategy.go",
+      "file_type": "code",
+      "source_file": "auth/strategy.go",
+      "source_location": "L1",
+      "id": "auth_strategy_go",
+      "community": 7,
+      "norm_label": "strategy.go"
+    },
+    {
+      "label": "Strategy",
+      "file_type": "code",
+      "source_file": "auth/strategy.go",
+      "source_location": "L12",
+      "id": "auth_strategy",
+      "community": 7,
+      "norm_label": "strategy"
+    },
+    {
+      "label": "registry.go",
+      "file_type": "code",
+      "source_file": "auth/registry.go",
+      "source_location": "L1",
+      "id": "auth_registry_go",
+      "community": 3,
+      "norm_label": "registry.go"
+    },
+    {
+      "label": "strategyRegistry",
+      "file_type": "code",
+      "source_file": "auth/registry.go",
+      "source_location": "L14",
+      "id": "auth_strategyregistry",
+      "community": 3,
+      "norm_label": "strategyregistry"
+    },
+    {
+      "label": ".Register()",
+      "file_type": "code",
+      "source_file": "auth/registry.go",
+      "source_location": "L21",
+      "id": "auth_strategyregistry_register",
+      "community": 3,
+      "norm_label": ".register()"
+    },
+    {
+      "label": ".SetDefault()",
+      "file_type": "code",
+      "source_file": "auth/registry.go",
+      "source_location": "L42",
+      "id": "auth_strategyregistry_setdefault",
+      "community": 3,
+      "norm_label": ".setdefault()"
+    },
+    {
+      "label": ".Get()",
+      "file_type": "code",
+      "source_file": "auth/registry.go",
+      "source_location": "L53",
+      "id": "auth_strategyregistry_get",
+      "community": 3,
+      "norm_label": ".get()"
+    },
+    {
+      "label": ".Default()",
+      "file_type": "code",
+      "source_file": "auth/registry.go",
+      "source_location": "L71",
+      "id": "auth_strategyregistry_default",
+      "community": 3,
+      "norm_label": ".default()"
+    },
+    {
+      "label": ".All()",
+      "file_type": "code",
+      "source_file": "auth/registry.go",
+      "source_location": "L76",
+      "id": "auth_strategyregistry_all",
+      "community": 3,
+      "norm_label": ".all()"
+    },
+    {
+      "label": "context.go",
+      "file_type": "code",
+      "source_file": "auth/context.go",
+      "source_location": "L1",
+      "id": "auth_context_go",
+      "community": 1,
+      "norm_label": "context.go"
+    },
+    {
+      "label": "AccessTokenFromCtx()",
+      "file_type": "code",
+      "source_file": "auth/context.go",
+      "source_location": "L16",
+      "id": "auth_context_accesstokenfromctx",
+      "community": 1,
+      "norm_label": "accesstokenfromctx()"
+    },
+    {
+      "label": "StrategyFromCtx()",
+      "file_type": "code",
+      "source_file": "auth/context.go",
+      "source_location": "L29",
+      "id": "auth_context_strategyfromctx",
+      "community": 1,
+      "norm_label": "strategyfromctx()"
+    },
+    {
+      "label": "strategy_email_redirect.go",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L1",
+      "id": "auth_strategy_email_redirect_go",
+      "community": 5,
+      "norm_label": "strategy_email_redirect.go"
+    },
+    {
+      "label": "EmailRedirect",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L15",
+      "id": "auth_emailredirect",
+      "community": 6,
+      "norm_label": "emailredirect"
+    },
+    {
+      "label": "NewEmailRedirect()",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L20",
+      "id": "auth_strategy_email_redirect_newemailredirect",
+      "community": 5,
+      "norm_label": "newemailredirect()"
+    },
+    {
+      "label": ".Name()",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L24",
+      "id": "auth_emailredirect_name",
+      "community": 6,
+      "norm_label": ".name()"
+    },
+    {
+      "label": ".Config()",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L26",
+      "id": "auth_emailredirect_config",
+      "community": 6,
+      "norm_label": ".config()"
+    },
+    {
+      "label": ".AuthorizeURL()",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L28",
+      "id": "auth_emailredirect_authorizeurl",
+      "community": 6,
+      "norm_label": ".authorizeurl()"
+    },
+    {
+      "label": ".ExchangeCode()",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L32",
+      "id": "auth_emailredirect_exchangecode",
+      "community": 4,
+      "norm_label": ".exchangecode()"
+    },
+    {
+      "label": ".RefreshTokens()",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L36",
+      "id": "auth_emailredirect_refreshtokens",
+      "community": 6,
+      "norm_label": ".refreshtokens()"
+    },
+    {
+      "label": ".LogoutURL()",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L40",
+      "id": "auth_emailredirect_logouturl",
+      "community": 6,
+      "norm_label": ".logouturl()"
+    },
+    {
+      "label": ".ValidateAccessToken()",
+      "file_type": "code",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L44",
+      "id": "auth_emailredirect_validateaccesstoken",
+      "community": 6,
+      "norm_label": ".validateaccesstoken()"
+    },
+    {
+      "label": "jwt.go",
+      "file_type": "code",
+      "source_file": "auth/jwt.go",
+      "source_location": "L1",
+      "id": "auth_jwt_go",
+      "community": 5,
+      "norm_label": "jwt.go"
+    },
+    {
+      "label": "newJWTValidator()",
+      "file_type": "code",
+      "source_file": "auth/jwt.go",
+      "source_location": "L15",
+      "id": "auth_jwt_newjwtvalidator",
+      "community": 5,
+      "norm_label": "newjwtvalidator()"
+    },
+    {
+      "label": "validateWith()",
+      "file_type": "code",
+      "source_file": "auth/jwt.go",
+      "source_location": "L31",
+      "id": "auth_jwt_validatewith",
+      "community": 5,
+      "norm_label": "validatewith()"
+    },
+    {
+      "label": "ValidateAccessTokenAny()",
+      "file_type": "code",
+      "source_file": "auth/jwt.go",
+      "source_location": "L51",
+      "id": "auth_jwt_validateaccesstokenany",
+      "community": 1,
+      "norm_label": "validateaccesstokenany()"
+    },
+    {
+      "label": "IDTokenClaims()",
+      "file_type": "code",
+      "source_file": "auth/jwt.go",
+      "source_location": "L73",
+      "id": "auth_jwt_idtokenclaims",
+      "community": 5,
+      "norm_label": "idtokenclaims()"
+    },
+    {
+      "label": "oauth.go",
+      "file_type": "code",
+      "source_file": "auth/oauth.go",
+      "source_location": "L1",
+      "id": "auth_oauth_go",
+      "community": 4,
+      "norm_label": "oauth.go"
+    },
+    {
+      "label": "TokenResponse",
+      "file_type": "code",
+      "source_file": "auth/oauth.go",
+      "source_location": "L15",
+      "id": "auth_tokenresponse",
+      "community": 4,
+      "norm_label": "tokenresponse"
+    },
+    {
+      "label": "tokenEndpoint()",
+      "file_type": "code",
+      "source_file": "auth/oauth.go",
+      "source_location": "L24",
+      "id": "auth_oauth_tokenendpoint",
+      "community": 4,
+      "norm_label": "tokenendpoint()"
+    },
+    {
+      "label": "doTokenForm()",
+      "file_type": "code",
+      "source_file": "auth/oauth.go",
+      "source_location": "L30",
+      "id": "auth_oauth_dotokenform",
+      "community": 4,
+      "norm_label": "dotokenform()"
+    },
+    {
+      "label": "ExchangeAuthorizationCode()",
+      "file_type": "code",
+      "source_file": "auth/oauth.go",
+      "source_location": "L63",
+      "id": "auth_oauth_exchangeauthorizationcode",
+      "community": 4,
+      "norm_label": "exchangeauthorizationcode()"
+    },
+    {
+      "label": "RefreshTokens()",
+      "file_type": "code",
+      "source_file": "auth/oauth.go",
+      "source_location": "L74",
+      "id": "auth_oauth_refreshtokens",
+      "community": 4,
+      "norm_label": "refreshtokens()"
+    },
+    {
+      "label": "AuthorizeURL()",
+      "file_type": "code",
+      "source_file": "auth/oauth.go",
+      "source_location": "L85",
+      "id": "auth_oauth_authorizeurl",
+      "community": 4,
+      "norm_label": "authorizeurl()"
+    },
+    {
+      "label": "LogoutURL()",
+      "file_type": "code",
+      "source_file": "auth/oauth.go",
+      "source_location": "L102",
+      "id": "auth_oauth_logouturl",
+      "community": 4,
+      "norm_label": "logouturl()"
+    },
+    {
+      "label": "init.go",
+      "file_type": "code",
+      "source_file": "auth/init.go",
+      "source_location": "L1",
+      "id": "auth_init_go",
+      "community": 5,
+      "norm_label": "init.go"
+    },
+    {
+      "label": "Init()",
+      "file_type": "code",
+      "source_file": "auth/init.go",
+      "source_location": "L9",
+      "id": "auth_init_init",
+      "community": 5,
+      "norm_label": "init()"
+    },
+    {
+      "label": "auth.go",
+      "file_type": "code",
+      "source_file": "middlewares/auth.go",
+      "source_location": "L1",
+      "id": "middlewares_auth_go",
+      "community": 1,
+      "norm_label": "auth.go"
+    },
+    {
+      "label": "RequireAuth()",
+      "file_type": "code",
+      "source_file": "middlewares/auth.go",
+      "source_location": "L12",
+      "id": "middlewares_auth_requireauth",
+      "community": 1,
+      "norm_label": "requireauth()"
     },
     {
       "label": "middlewares.go",
@@ -36,17 +441,215 @@
       "source_file": "middlewares/middlewares.go",
       "source_location": "L1",
       "id": "middlewares_middlewares_go",
-      "community": 1,
+      "community": 2,
       "norm_label": "middlewares.go"
+    },
+    {
+      "label": "devCORSOrigins()",
+      "file_type": "code",
+      "source_file": "middlewares/middlewares.go",
+      "source_location": "L18",
+      "id": "middlewares_middlewares_devcorsorigins",
+      "community": 2,
+      "norm_label": "devcorsorigins()"
     },
     {
       "label": "Stack()",
       "file_type": "code",
       "source_file": "middlewares/middlewares.go",
-      "source_location": "L18",
+      "source_location": "L37",
       "id": "middlewares_middlewares_stack",
-      "community": 1,
+      "community": 2,
       "norm_label": "stack()"
+    },
+    {
+      "label": "user.go",
+      "file_type": "code",
+      "source_file": "models/user.go",
+      "source_location": "L1",
+      "id": "models_user_go",
+      "community": 8,
+      "norm_label": "user.go"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "models/user.go",
+      "source_location": "L5",
+      "id": "models_user",
+      "community": 8,
+      "norm_label": "user"
+    },
+    {
+      "label": "auth.go",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L1",
+      "id": "controllers_auth_go",
+      "community": 0,
+      "norm_label": "auth.go"
+    },
+    {
+      "label": "cookieSameSite()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L18",
+      "id": "controllers_auth_cookiesamesite",
+      "community": 0,
+      "norm_label": "cookiesamesite()"
+    },
+    {
+      "label": "authCookiePath()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L29",
+      "id": "controllers_auth_authcookiepath",
+      "community": 0,
+      "norm_label": "authcookiepath()"
+    },
+    {
+      "label": "setFlowCookies()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L33",
+      "id": "controllers_auth_setflowcookies",
+      "community": 0,
+      "norm_label": "setflowcookies()"
+    },
+    {
+      "label": "clearFlowCookies()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L56",
+      "id": "controllers_auth_clearflowcookies",
+      "community": 0,
+      "norm_label": "clearflowcookies()"
+    },
+    {
+      "label": "clearAuthCookies()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L74",
+      "id": "controllers_auth_clearauthcookies",
+      "community": 0,
+      "norm_label": "clearauthcookies()"
+    },
+    {
+      "label": "strategyFromRequest()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L92",
+      "id": "controllers_auth_strategyfromrequest",
+      "community": 0,
+      "norm_label": "strategyfromrequest()"
+    },
+    {
+      "label": "AuthLogin()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L103",
+      "id": "controllers_auth_authlogin",
+      "community": 0,
+      "norm_label": "authlogin()"
+    },
+    {
+      "label": "AuthCallback()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L121",
+      "id": "controllers_auth_authcallback",
+      "community": 0,
+      "norm_label": "authcallback()"
+    },
+    {
+      "label": "AuthRefresh()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L162",
+      "id": "controllers_auth_authrefresh",
+      "community": 0,
+      "norm_label": "authrefresh()"
+    },
+    {
+      "label": "AuthLogout()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L188",
+      "id": "controllers_auth_authlogout",
+      "community": 0,
+      "norm_label": "authlogout()"
+    },
+    {
+      "label": "AuthMe()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L201",
+      "id": "controllers_auth_authme",
+      "community": 1,
+      "norm_label": "authme()"
+    },
+    {
+      "label": "subjectFromAccessToken()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L222",
+      "id": "controllers_auth_subjectfromaccesstoken",
+      "community": 1,
+      "norm_label": "subjectfromaccesstoken()"
+    },
+    {
+      "label": "saveUserFromIDToken()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L238",
+      "id": "controllers_auth_saveuserfromidtoken",
+      "community": 0,
+      "norm_label": "saveuserfromidtoken()"
+    },
+    {
+      "label": "userFromIDTokenClaims()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L250",
+      "id": "controllers_auth_userfromidtokenclaims",
+      "community": 0,
+      "norm_label": "userfromidtokenclaims()"
+    },
+    {
+      "label": "upsertUser()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L278",
+      "id": "controllers_auth_upsertuser",
+      "community": 0,
+      "norm_label": "upsertuser()"
+    },
+    {
+      "label": "claimString()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L305",
+      "id": "controllers_auth_claimstring",
+      "community": 0,
+      "norm_label": "claimstring()"
+    },
+    {
+      "label": "claimBool()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L320",
+      "id": "controllers_auth_claimbool",
+      "community": 0,
+      "norm_label": "claimbool()"
+    },
+    {
+      "label": "splitName()",
+      "file_type": "code",
+      "source_file": "controllers/auth.go",
+      "source_location": "L329",
+      "id": "controllers_auth_splitname",
+      "community": 0,
+      "norm_label": "splitname()"
     },
     {
       "label": "health.go",
@@ -54,7 +657,7 @@
       "source_file": "controllers/health.go",
       "source_location": "L1",
       "id": "controllers_health_go",
-      "community": 2,
+      "community": 9,
       "norm_label": "health.go"
     },
     {
@@ -63,7 +666,7 @@
       "source_file": "controllers/health.go",
       "source_location": "L5",
       "id": "controllers_health_health",
-      "community": 2,
+      "community": 9,
       "norm_label": "health()"
     },
     {
@@ -72,7 +675,7 @@
       "source_file": "helpers/response.go",
       "source_location": "L1",
       "id": "helpers_response_go",
-      "community": 3,
+      "community": 10,
       "norm_label": "response.go"
     },
     {
@@ -81,7 +684,7 @@
       "source_file": "helpers/response.go",
       "source_location": "L5",
       "id": "helpers_response_jsonerror",
-      "community": 3,
+      "community": 10,
       "norm_label": "jsonerror()"
     },
     {
@@ -90,7 +693,7 @@
       "source_file": "initializers/env.go",
       "source_location": "L1",
       "id": "initializers_env_go",
-      "community": 0,
+      "community": 2,
       "norm_label": "env.go"
     },
     {
@@ -99,7 +702,7 @@
       "source_file": "initializers/env.go",
       "source_location": "L16",
       "id": "initializers_env_loadenv",
-      "community": 0,
+      "community": 2,
       "norm_label": "loadenv()"
     },
     {
@@ -108,17 +711,26 @@
       "source_file": "initializers/db.go",
       "source_location": "L1",
       "id": "initializers_db_go",
-      "community": 0,
+      "community": 2,
       "norm_label": "db.go"
     },
     {
       "label": "ConnectDB()",
       "file_type": "code",
       "source_file": "initializers/db.go",
-      "source_location": "L15",
+      "source_location": "L17",
       "id": "initializers_db_connectdb",
-      "community": 0,
+      "community": 2,
       "norm_label": "connectdb()"
+    },
+    {
+      "label": "SyncDB()",
+      "file_type": "code",
+      "source_file": "initializers/db.go",
+      "source_location": "L49",
+      "id": "initializers_db_syncdb",
+      "community": 2,
+      "norm_label": "syncdb()"
     }
   ],
   "links": [
@@ -128,9 +740,9 @@
       "source_file": "main.go",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_go",
-      "target": "backend_main_init",
-      "confidence_score": 1.0
+      "target": "backend_main_init"
     },
     {
       "relation": "contains",
@@ -138,9 +750,9 @@
       "source_file": "main.go",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "main_go",
-      "target": "backend_main_main",
-      "confidence_score": 1.0
+      "target": "backend_main_main"
     },
     {
       "relation": "calls",
@@ -170,6 +782,17 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "main.go",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "backend_main_init",
+      "target": "initializers_db_syncdb"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.go",
       "source_location": "L44",
       "weight": 1.0,
       "source": "backend_main_main",
@@ -178,11 +801,968 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "auth/config.go",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "auth_config_go",
+      "target": "auth_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/config.go",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "auth_config_go",
+      "target": "auth_config_loadauth0config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "auth/config.go",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "auth_config_loadauth0config",
+      "target": "auth_strategyregistry_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "auth/init.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "auth_init_init",
+      "target": "auth_config_loadauth0config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/cookies.go",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "auth_cookies_go",
+      "target": "auth_cookies_cookiesamesitefiber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/cookies.go",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "auth_cookies_go",
+      "target": "auth_cookies_setauthcookies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/cookies.go",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "auth_cookies_setauthcookies",
+      "target": "auth_cookies_cookiesamesitefiber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "middlewares/auth.go",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "middlewares_auth_requireauth",
+      "target": "auth_cookies_setauthcookies"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "controllers/auth.go",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "controllers_auth_authcallback",
+      "target": "auth_cookies_setauthcookies"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "controllers/auth.go",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "controllers_auth_authrefresh",
+      "target": "auth_cookies_setauthcookies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy.go",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "auth_strategy_go",
+      "target": "auth_strategy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/registry.go",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "auth_registry_go",
+      "target": "auth_strategyregistry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/registry.go",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "auth_strategyregistry",
+      "target": "auth_strategyregistry_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/registry.go",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "auth_strategyregistry",
+      "target": "auth_strategyregistry_setdefault",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/registry.go",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "auth_strategyregistry",
+      "target": "auth_strategyregistry_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/registry.go",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "auth_strategyregistry",
+      "target": "auth_strategyregistry_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/registry.go",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "auth_strategyregistry",
+      "target": "auth_strategyregistry_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/registry.go",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "auth_strategyregistry_default",
+      "target": "auth_strategyregistry_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/context.go",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "auth_context_go",
+      "target": "auth_context_accesstokenfromctx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/context.go",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "auth_context_go",
+      "target": "auth_context_strategyfromctx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "controllers/auth.go",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "controllers_auth_subjectfromaccesstoken",
+      "target": "auth_context_accesstokenfromctx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "auth_strategy_email_redirect_go",
+      "target": "auth_emailredirect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "auth_strategy_email_redirect_go",
+      "target": "auth_strategy_email_redirect_newemailredirect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "auth_emailredirect",
+      "target": "auth_emailredirect_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "auth_emailredirect",
+      "target": "auth_emailredirect_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "auth_emailredirect",
+      "target": "auth_emailredirect_authorizeurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "auth_emailredirect",
+      "target": "auth_emailredirect_exchangecode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "auth_emailredirect",
+      "target": "auth_emailredirect_refreshtokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "auth_emailredirect",
+      "target": "auth_emailredirect_logouturl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "auth_emailredirect",
+      "target": "auth_emailredirect_validateaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "auth/init.go",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "auth_init_init",
+      "target": "auth_strategy_email_redirect_newemailredirect"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "auth/strategy_email_redirect.go",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "auth_emailredirect_exchangecode",
+      "target": "auth_oauth_exchangeauthorizationcode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/jwt.go",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "auth_jwt_go",
+      "target": "auth_jwt_newjwtvalidator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/jwt.go",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "auth_jwt_go",
+      "target": "auth_jwt_validatewith",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/jwt.go",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "auth_jwt_go",
+      "target": "auth_jwt_validateaccesstokenany",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/jwt.go",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "auth_jwt_go",
+      "target": "auth_jwt_idtokenclaims",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "auth/init.go",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "auth_init_init",
+      "target": "auth_jwt_newjwtvalidator"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "middlewares/auth.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "middlewares_auth_requireauth",
+      "target": "auth_jwt_validateaccesstokenany"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "controllers/auth.go",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "controllers_auth_subjectfromaccesstoken",
+      "target": "auth_jwt_validateaccesstokenany"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "controllers/auth.go",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "controllers_auth_saveuserfromidtoken",
+      "target": "auth_jwt_idtokenclaims"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "auth_oauth_go",
+      "target": "auth_tokenresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "auth_oauth_go",
+      "target": "auth_oauth_tokenendpoint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "auth_oauth_go",
+      "target": "auth_oauth_dotokenform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "auth_oauth_go",
+      "target": "auth_oauth_exchangeauthorizationcode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "auth_oauth_go",
+      "target": "auth_oauth_refreshtokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "auth_oauth_go",
+      "target": "auth_oauth_authorizeurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "auth_oauth_go",
+      "target": "auth_oauth_logouturl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "auth_oauth_dotokenform",
+      "target": "auth_oauth_tokenendpoint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "auth_oauth_exchangeauthorizationcode",
+      "target": "auth_oauth_dotokenform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/oauth.go",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "auth_oauth_refreshtokens",
+      "target": "auth_oauth_dotokenform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "auth/init.go",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "auth_init_go",
+      "target": "auth_init_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/auth.go",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "middlewares_auth_go",
+      "target": "middlewares_auth_requireauth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "middlewares/middlewares.go",
       "source_location": "L18",
       "weight": 1.0,
       "source": "middlewares_middlewares_go",
-      "target": "middlewares_middlewares_stack",
+      "target": "middlewares_middlewares_devcorsorigins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/middlewares.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middlewares_middlewares_go",
+      "target": "middlewares_middlewares_stack"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "middlewares/middlewares.go",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "middlewares_middlewares_stack",
+      "target": "middlewares_middlewares_devcorsorigins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/user.go",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "models_user_go",
+      "target": "models_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_cookiesamesite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_authcookiepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_setflowcookies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_clearflowcookies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_clearauthcookies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_strategyfromrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_authlogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_authcallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_authrefresh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_authlogout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_authme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L222",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_subjectfromaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_saveuserfromidtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_userfromidtokenclaims",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_upsertuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L305",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_claimstring",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L320",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_claimbool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L329",
+      "weight": 1.0,
+      "source": "controllers_auth_go",
+      "target": "controllers_auth_splitname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "controllers_auth_setflowcookies",
+      "target": "controllers_auth_cookiesamesite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "controllers_auth_clearflowcookies",
+      "target": "controllers_auth_cookiesamesite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "controllers_auth_clearauthcookies",
+      "target": "controllers_auth_cookiesamesite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "controllers_auth_setflowcookies",
+      "target": "controllers_auth_authcookiepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "controllers_auth_clearflowcookies",
+      "target": "controllers_auth_authcookiepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "controllers_auth_authlogin",
+      "target": "controllers_auth_setflowcookies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "controllers_auth_authcallback",
+      "target": "controllers_auth_clearflowcookies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "controllers_auth_authlogout",
+      "target": "controllers_auth_clearauthcookies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "controllers_auth_authlogin",
+      "target": "controllers_auth_strategyfromrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "controllers_auth_authcallback",
+      "target": "controllers_auth_strategyfromrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "controllers_auth_authrefresh",
+      "target": "controllers_auth_strategyfromrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L189",
+      "weight": 1.0,
+      "source": "controllers_auth_authlogout",
+      "target": "controllers_auth_strategyfromrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "controllers_auth_authcallback",
+      "target": "controllers_auth_saveuserfromidtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "controllers_auth_authme",
+      "target": "controllers_auth_subjectfromaccesstoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "controllers_auth_saveuserfromidtoken",
+      "target": "controllers_auth_userfromidtokenclaims",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "controllers_auth_saveuserfromidtoken",
+      "target": "controllers_auth_upsertuser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "controllers_auth_userfromidtokenclaims",
+      "target": "controllers_auth_claimstring",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L259",
+      "weight": 1.0,
+      "source": "controllers_auth_userfromidtokenclaims",
+      "target": "controllers_auth_splitname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "controllers/auth.go",
+      "source_location": "L272",
+      "weight": 1.0,
+      "source": "controllers_auth_userfromidtokenclaims",
+      "target": "controllers_auth_claimbool",
       "confidence_score": 1.0
     },
     {
@@ -191,9 +1771,9 @@
       "source_file": "controllers/health.go",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "controllers_health_go",
-      "target": "controllers_health_health",
-      "confidence_score": 1.0
+      "target": "controllers_health_health"
     },
     {
       "relation": "contains",
@@ -201,9 +1781,9 @@
       "source_file": "helpers/response.go",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "helpers_response_go",
-      "target": "helpers_response_jsonerror",
-      "confidence_score": 1.0
+      "target": "helpers_response_jsonerror"
     },
     {
       "relation": "contains",
@@ -211,9 +1791,9 @@
       "source_file": "initializers/env.go",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "initializers_env_go",
-      "target": "initializers_env_loadenv",
-      "confidence_score": 1.0
+      "target": "initializers_env_loadenv"
     },
     {
       "relation": "contains",
@@ -221,8 +1801,18 @@
       "source_file": "initializers/db.go",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "initializers_db_go",
-      "target": "initializers_db_connectdb",
+      "target": "initializers_db_connectdb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "initializers/db.go",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "initializers_db_go",
+      "target": "initializers_db_syncdb",
       "confidence_score": 1.0
     }
   ],

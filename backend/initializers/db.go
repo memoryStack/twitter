@@ -8,6 +8,8 @@ import (
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
+
+	"twitter/backend/models"
 )
 
 var DB *gorm.DB
@@ -42,4 +44,10 @@ func ConnectDB(environment string) {
 	sqlDB.SetConnMaxLifetime(30 * time.Minute)
 
 	DB = db
+}
+
+func SyncDB() {
+	if err := DB.AutoMigrate(&models.User{}); err != nil {
+		panic(fmt.Sprintf("failed to sync database: %v", err))
+	}
 }

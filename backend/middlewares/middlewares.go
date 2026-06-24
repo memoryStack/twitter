@@ -15,20 +15,46 @@ import (
 	"twitter/backend/initializers"
 )
 
-func Stack(environment string) []fiber.Handler {
-	corsCfg := cors.Config{
-		AllowMethods:  "GET,POST,PUT,PATCH,DELETE,OPTIONS",
-		AllowHeaders:  "Origin,Content-Type,Accept,Authorization,X-Request-ID",
-		ExposeHeaders: "X-Request-ID",
+func devCORSOrigins() []string {
+	raw := strings.TrimSpace(os.Getenv("AUTH0_CORS_ORIGINS"))
+	if raw == "" {
+		return []string{
+			"http://localhost:3000",
+			"http://localhost:5173",
+			"http://127.0.0.1:3000",
+			"http://127.0.0.1:5173",
+		}
 	}
+	var out []string
+	for _, p := range strings.Split(raw, ",") {
+		if t := strings.TrimSpace(p); t != "" {
+			out = append(out, t)
+		}
+	}
+	return out
+}
+
+func Stack(environment string) []fiber.Handler {
+	corsHeaders := "Origin,Content-Type,Accept,Authorization,X-Request-ID,Cookie"
+	var corsCfg cors.Config
 
 	if environment == initializers.EnvDevelopment {
-		corsCfg.AllowOrigins = "*"
-		corsCfg.AllowCredentials = false
+		corsCfg = cors.Config{
+			AllowOrigins:     strings.Join(devCORSOrigins(), ","),
+			AllowMethods:     "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+			AllowHeaders:     corsHeaders,
+			ExposeHeaders:    "X-Request-ID",
+			AllowCredentials: true,
+		}
 	} else {
-		corsCfg.AllowOrigins = os.Getenv("CORS_ALLOW_ORIGINS")
-		origins := strings.TrimSpace(corsCfg.AllowOrigins)
-		corsCfg.AllowCredentials = origins != "" && origins != "*"
+		origins := strings.TrimSpace(os.Getenv("CORS_ALLOW_ORIGINS"))
+		corsCfg = cors.Config{
+			AllowOrigins:     origins,
+			AllowMethods:     "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+			AllowHeaders:     corsHeaders,
+			ExposeHeaders:    "X-Request-ID",
+			AllowCredentials: origins != "" && origins != "*",
+		}
 	}
 
 	return []fiber.Handler{

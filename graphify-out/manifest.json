@@ -1,30 +1,82 @@
 {
   "/Users/admin/go/src/twitter/backend/main.go": {
-    "mtime": 1782270395.2547486,
-    "hash": "4f67aca4dacff32cedf82469b18708f0"
+    "mtime": 1782278519.9421082,
+    "hash": "c6b696957f5a95174194e5f75eb5a5e9"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/config.go": {
+    "mtime": 1782278430.066186,
+    "hash": "d6f3053ee5ca36e46f22f36e1e4f811e"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/cookies.go": {
+    "mtime": 1782278446.908762,
+    "hash": "1b2b1e1672dde379ab6c93880740cb62"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/strategy.go": {
+    "mtime": 1782278415.6371863,
+    "hash": "adaca76d6873e3bf866bd03bd380cacf"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/registry.go": {
+    "mtime": 1782278420.9559274,
+    "hash": "196bcd077777328e50e128a4d962c7a5"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/context.go": {
+    "mtime": 1782278452.4166658,
+    "hash": "767c1f670d43936e9814410d3c32bc3f"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/strategy_email_redirect.go": {
+    "mtime": 1782278696.7264822,
+    "hash": "019b4f5b81dbf1b29ab68db18d4da44f"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/jwt.go": {
+    "mtime": 1782278443.745994,
+    "hash": "6840388704ad642f8d7efffba0b2d14b"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/oauth.go": {
+    "mtime": 1782278438.2063756,
+    "hash": "99189eaa4cebc0e97f01b5ce8481ab4d"
+  },
+  "/Users/admin/go/src/twitter/backend/auth/init.go": {
+    "mtime": 1782278698.8308342,
+    "hash": "4a4dad3fe528d06affcfcc603e6283c8"
+  },
+  "/Users/admin/go/src/twitter/backend/middlewares/auth.go": {
+    "mtime": 1782278495.1064134,
+    "hash": "5321987fcc91cfbf200aeddd78b45089"
   },
   "/Users/admin/go/src/twitter/backend/middlewares/middlewares.go": {
-    "mtime": 1782270391.2440093,
-    "hash": "1c9aa28c3655dbf629c444066c162a54"
+    "mtime": 1782278532.3079696,
+    "hash": "e99c328925f5007b752531cf3c3a654f"
+  },
+  "/Users/admin/go/src/twitter/backend/models/user.go": {
+    "mtime": 1782278466.6764097,
+    "hash": "ae872704bc3a68ec4bec6055b2336b80"
+  },
+  "/Users/admin/go/src/twitter/backend/controllers/auth.go": {
+    "mtime": 1782278511.1942866,
+    "hash": "2443c8c6a37370c6af634fba2f1d6012"
   },
   "/Users/admin/go/src/twitter/backend/controllers/health.go": {
-    "mtime": 1782270391.6684442,
+    "mtime": 1782272400.9796762,
     "hash": "1669288a705520ab3f8e8811f4170724"
   },
   "/Users/admin/go/src/twitter/backend/helpers/response.go": {
-    "mtime": 1782270392.4335258,
+    "mtime": 1782272400.9805832,
     "hash": "0b83d39598af73b513234fc81c026635"
   },
   "/Users/admin/go/src/twitter/backend/initializers/env.go": {
-    "mtime": 1782270726.8359375,
+    "mtime": 1782272400.9816842,
     "hash": "74a35fa4577b78aba97725a22bb6eaec"
   },
   "/Users/admin/go/src/twitter/backend/initializers/db.go": {
-    "mtime": 1782270388.805296,
-    "hash": "479a17542cb1363b4b4c9f41c8a68094"
+    "mtime": 1782278521.9179358,
+    "hash": "2f4dbdc0a1514d9b1a95b7dfca7f4464"
+  },
+  "/Users/admin/go/src/twitter/README.md": {
+    "mtime": 1782272378.5813122,
+    "hash": "9c72a0434bd724b8b8775c540be8a2b2"
   },
   "/Users/admin/go/src/twitter/PROMPTS.md": {
-    "mtime": 1782270400.7435656,
+    "mtime": 1782272400.9763048,
     "hash": "0b3f25c989a8101635b8cba16a0989ff"
   }
 }

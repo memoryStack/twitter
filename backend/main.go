@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"log"
 	"os"
@@ -8,6 +9,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 
+	"twitter/backend/auth"
 	"twitter/backend/controllers"
 	"twitter/backend/initializers"
 	"twitter/backend/middlewares"
@@ -26,6 +28,10 @@ func init() {
 
 	initializers.LoadEnv(runEnv)
 
+	if err := auth.Init(context.Background()); err != nil {
+		log.Fatalf("auth: %v", err)
+	}
+
 	if runEnv == initializers.EnvProduction {
 		if strings.TrimSpace(os.Getenv("CORS_ALLOW_ORIGINS")) == "" {
 			log.Fatal("CORS_ALLOW_ORIGINS is required in production")
@@ -33,6 +39,7 @@ func init() {
 	}
 
 	initializers.ConnectDB(runEnv)
+	initializers.SyncDB()
 }
 
 func main() {
@@ -46,6 +53,12 @@ func main() {
 	}
 
 	app.Get("/health", controllers.Health)
+
+	app.Get("/api/auth/login", controllers.AuthLogin)
+	app.Get("/api/auth/callback", controllers.AuthCallback)
+	app.Post("/api/auth/refresh", controllers.AuthRefresh)
+	app.Get("/api/auth/logout", controllers.AuthLogout)
+	app.Get("/api/auth/me", middlewares.RequireAuth, controllers.AuthMe)
 
 	addr := os.Getenv("SERVER_ADDR")
 	if addr == "" {
