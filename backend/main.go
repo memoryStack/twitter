@@ -40,6 +40,7 @@ func init() {
 
 	initializers.ConnectDB(runEnv)
 	initializers.SyncDB()
+	initializers.InitRepositories()
 }
 
 func main() {
@@ -59,6 +60,14 @@ func main() {
 	app.Post("/api/auth/refresh", controllers.AuthRefresh)
 	app.Post("/api/auth/logout", controllers.AuthLogout)
 	app.Get("/api/auth/me", middlewares.RequireAuth, controllers.AuthMe)
+
+	tweets := app.Group("/api/tweets", middlewares.RequireAuth)
+	tweets.Post("/", controllers.CreateTweet)
+	tweets.Get("/", controllers.GetMyTweets)
+	tweets.Get("/:id", controllers.GetTweetByID)
+	tweets.Patch("/:id", controllers.UpdateMyTweet)
+	tweets.Delete("/:id", controllers.DeleteMyTweet)
+	tweets.Post("/:id/like", controllers.LikeTweet)
 
 	addr := os.Getenv("SERVER_ADDR")
 	if addr == "" {

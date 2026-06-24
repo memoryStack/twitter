@@ -4,15 +4,16 @@ import (
 	"crypto/rand"
 	"crypto/subtle"
 	"encoding/hex"
+	"errors"
 	"fmt"
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	"gorm.io/gorm"
 
 	"twitter/backend/auth"
 	"twitter/backend/initializers"
 	"twitter/backend/models"
+	"twitter/backend/repositories"
 )
 
 func cookieSameSite(s string) string {
@@ -150,7 +151,7 @@ func AuthCallback(c *fiber.Ctx) error {
 	auth.SetAuthCookies(c, cfg, tr)
 
 	if tr.IDToken != "" {
-		if _, err := saveUserFromIDToken(initializers.DB, tr.IDToken); err != nil {
+		if _, err := saveUserFromIDToken(c, tr.IDToken); err != nil {
 			return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
 		}
 	}
@@ -186,6 +187,11 @@ func AuthRefresh(c *fiber.Ctx) error {
 
 // AuthLogout clears app cookies and returns the IdP logout URL for the browser.
 func AuthLogout(c *fiber.Ctx) error {
+
+	// return c.Status(fiber.StatusUnauthorized).JSON(fiber.Map{
+	// 	"message": "Logged out successfully",
+	// })
+
 	s, err := strategyFromRequest(c)
 	if err != nil {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
@@ -204,9 +210,12 @@ func AuthMe(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusUnauthorized).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	var u models.User
-	if err := initializers.DB.Where("auth0_id = ?", sub).First(&u).Error; err != nil {
-		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": "user not found"})
+	u, err := initializers.UserRepo.GetByAuth0ID(c.UserContext(), sub)
+	if err != nil {
+		if errors.Is(err, repositories.ErrNotFound) {
+			return c.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": "user not found"})
+		}
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": "failed to fetch user"})
 	}
 	return c.JSON(fiber.Map{"user": fiber.Map{
 		"id":             u.ID,
@@ -235,7 +244,7 @@ func subjectFromAccessToken(c *fiber.Ctx) (string, error) {
 	return sub, nil
 }
 
-func saveUserFromIDToken(db *gorm.DB, idToken string) (*models.User, error) {
+func saveUserFromIDToken(c *fiber.Ctx, idToken string) (*models.User, error) {
 	claims, err := auth.IDTokenClaims(idToken)
 	if err != nil {
 		return nil, err
@@ -244,7 +253,7 @@ func saveUserFromIDToken(db *gorm.DB, idToken string) (*models.User, error) {
 	if err != nil {
 		return nil, err
 	}
-	return upsertUser(db, u)
+	return initializers.UserRepo.UpsertByAuth0ID(c.UserContext(), u)
 }
 
 func userFromIDTokenClaims(claims map[string]interface{}) (models.User, error) {
@@ -273,33 +282,6 @@ func userFromIDTokenClaims(claims map[string]interface{}) (models.User, error) {
 		Image:         claimString(claims, "picture"),
 		Auth0ID:       sub,
 	}, nil
-}
-
-func upsertUser(db *gorm.DB, u models.User) (*models.User, error) {
-	var existing models.User
-	err := db.Where("auth0_id = ?", u.Auth0ID).First(&existing).Error
-	if err == gorm.ErrRecordNotFound {
-		if err := db.Create(&u).Error; err != nil {
-			return nil, err
-		}
-		return &u, nil
-	}
-	if err != nil {
-		return nil, err
-	}
-
-	existing.FirstName = u.FirstName
-	existing.LastName = u.LastName
-	existing.Email = u.Email
-	existing.PhoneNumber = u.PhoneNumber
-	existing.EmailVerified = u.EmailVerified
-	if u.Image != "" {
-		existing.Image = u.Image
-	}
-	if err := db.Save(&existing).Error; err != nil {
-		return nil, err
-	}
-	return &existing, nil
 }
 
 func claimString(claims map[string]interface{}, keys ...string) string {

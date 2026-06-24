@@ -9,7 +9,7 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	"twitter/backend/models"
+	postgresrepo "twitter/backend/repositories/postgres"
 )
 
 var DB *gorm.DB
@@ -47,7 +47,7 @@ func ConnectDB(environment string) {
 }
 
 func SyncDB() {
-	if err := DB.AutoMigrate(&models.User{}); err != nil {
+	if err := postgresrepo.Migrate(DB); err != nil {
 		panic(fmt.Sprintf("failed to sync database: %v", err))
 	}
 }
